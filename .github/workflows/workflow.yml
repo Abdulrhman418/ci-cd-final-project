@@ -33,7 +33,7 @@ jobs:
         run: |
           nosetests -v --with-spec --spec-color --with-coverage --cover-package=app
       - name: Upload reports
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ci-reports
           path: reports/
